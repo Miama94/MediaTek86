@@ -1,10 +1,17 @@
-﻿using System.Configuration;
+﻿using System.Collections.Generic;
+using System.Configuration;
 using System.Data.SqlClient;
+using MediaTek86.Models;
 
-namespace TonProjet.dal
+namespace MediaTek86.dal
 {
     public class dal
     {
+        public List<Personnel> GetAllPersonnel()
+        {
+            List<Personnel> liste = new List<Personnel>();
+            return liste;
+        }
         private string connectionString;
 
         public dal()
